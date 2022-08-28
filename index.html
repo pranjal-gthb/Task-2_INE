@@ -26,7 +26,15 @@
                     cache: false,
                     type: 'GET',                   
                     data: { "FirstName": self.searchKey() },
-                    success: function (data) { 			
+                    success: function (data) { 	
+						if(data == null){
+							self.firstName("")
+							self.lastName(""),
+							self.age("");
+							self.phone("");
+							self.address("");
+							
+						}
                         self.firstName(data.FirstName)
                         self.lastName(data.LastName),
                         self.age(data.Age);
@@ -68,6 +76,11 @@ body{
 }
 .center{
 	text-align:center;
+	color:white;
+}
+.transp{
+	background:transparent;
+	border:none;
 	color:white;
 }
 </style>
@@ -114,3 +127,4 @@ body{
   
 </body>
 </html>
+
