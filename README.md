@@ -2,7 +2,7 @@
 
 The web application allows users to search customer’s detail.
 
-Link to Launch Web Application: http://getcustdeta.s3-website.us-east-2.amazonaws.com
+Link to Launch Web Application (_Please use Laptop_): http://getcustdeta.s3-website.us-east-2.amazonaws.com
 
 DataBase contains the following items:
 
@@ -25,5 +25,6 @@ The DynamoDB database must-have details of at least 5 customers and any programm
 
 Vulnerability:
 
-Upon performing a search, the web page displays the result on the same page in a section beneath the search input field. The web page also shows a string 'Showing Results for "<search input>".' (For clarity, refer to the wireframe provided below). The web application is vulnerable to
-reflected XSS attack and upon injecting an XSS payload in the input field the payload will be executed.
+Upon performing a search, the web page displays the result on the same page in a section beneath the search input field.
+
+The web page also shows a string '_Showing Results for "<search input>"_.' (For clarity, refer to the wireframe provided below). The web application is vulnerable to reflected XSS attack and upon injecting an XSS payload in the input field the payload will be executed.
