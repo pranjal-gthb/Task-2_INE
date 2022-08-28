@@ -2,6 +2,8 @@
 
 The web application allows users to search customer’s detail.
 
+Link to Launch Web Application: http://getcustdeta.s3-website.us-east-2.amazonaws.com
+
 Upon providing the first name or last name of the customer, the application will return the following information if the customer exists in the database:
 ● First Name 
 ● Last Name 
