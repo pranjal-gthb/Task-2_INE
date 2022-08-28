@@ -10,11 +10,17 @@ DataBase contains the following items:
 
 
 Upon providing the first name or last name of the customer, the application will return the following information if the customer exists in the database:
+
 ● First Name 
+
 ● Last Name 
+
 ● Phone Number 
+
 ● Age 
-● Address 
+
+● Address
+
 The DynamoDB database must-have details of at least 5 customers and any programming language can be used for the lambda function.
 
 Vulnerability:
