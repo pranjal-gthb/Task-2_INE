@@ -13,6 +13,8 @@ Pranjal         Agrawal         Indirapuram                 21          88263267
 Jauhar          Khan            Delhi                       22          7983792300
 Prachi          Jauhar          Noida                       20          8739249279
 
+<img width="777" alt="Screenshot 2022-08-29 at 12 09 48 AM" src="https://user-images.githubusercontent.com/68143657/187090195-258fe55f-8bbe-45f3-9791-85c7a7673bb9.png">
+
 
 Upon providing the first name or last name of the customer, the application will return the following information if the customer exists in the database:
 ● First Name 
