@@ -6,13 +6,6 @@ Link to Launch Web Application: http://getcustdeta.s3-website.us-east-2.amazonaw
 
 DataBase contains the following items:
 
-FirstName       LastName        Address                     Age         PhoneNo
-Anui            Anwar           Rajouri Garden              19          7472689700
-Pranav          Jalan           Niti Khand Indirapuram      23          8745297439
-Pranjal         Agrawal         Indirapuram                 21          8826326700
-Jauhar          Khan            Delhi                       22          7983792300
-Prachi          Jauhar          Noida                       20          8739249279
-
 <img width="777" alt="Screenshot 2022-08-29 at 12 09 48 AM" src="https://user-images.githubusercontent.com/68143657/187090195-258fe55f-8bbe-45f3-9791-85c7a7673bb9.png">
 
 
