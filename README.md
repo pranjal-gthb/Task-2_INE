@@ -4,6 +4,16 @@ The web application allows users to search customer’s detail.
 
 Link to Launch Web Application: http://getcustdeta.s3-website.us-east-2.amazonaws.com
 
+DataBase contains the following items:
+
+FirstName       LastName        Address                     Age         PhoneNo
+Anui            Anwar           Rajouri Garden              19          7472689700
+Pranav          Jalan           Niti Khand Indirapuram      23          8745297439
+Pranjal         Agrawal         Indirapuram                 21          8826326700
+Jauhar          Khan            Delhi                       22          7983792300
+Prachi          Jauhar          Noida                       20          8739249279
+
+
 Upon providing the first name or last name of the customer, the application will return the following information if the customer exists in the database:
 ● First Name 
 ● Last Name 
