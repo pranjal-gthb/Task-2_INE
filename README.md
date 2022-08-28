@@ -27,4 +27,6 @@ Vulnerability:
 
 Upon performing a search, the web page displays the result on the same page in a section beneath the search input field.
 
-The web page also shows a string '_Showing Results for "<search_input>"_.' (For clarity, refer to the wireframe provided below). The web application is vulnerable to reflected XSS attack and upon injecting an XSS payload in the input field the payload will be executed.
+The web page also shows a string '_Showing Results for "<search_input>"_.' (For clarity, refer to the wireframe provided below).
+
+The web application is vulnerable to reflected XSS attack and upon injecting an XSS payload in the input field the payload will be executed.
