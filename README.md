@@ -2,7 +2,7 @@
 
 The web application allows users to search customer’s detail.
 
-Link to Launch Web Application (_Please use Laptop, and the input is Case Sensitive so plaese lookout_): http://getcustdeta.s3-website.us-east-2.amazonaws.com
+Link to Launch Web Application (_Please use Laptop, and the input is case sensitive so please lookout_): http://getcustdeta.s3-website.us-east-2.amazonaws.com
 
 DataBase contains the following items:
 
