@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="knockout-3.4.2.js"></script>
+    <script type="text/javascript">
+        
+
+        $(document).ready(function() {
+
+            var customerViewModel = function() {
+            var self = this;
+            self.firstName = ko.observable("");
+            self.lastName = ko.observable("");
+            self.age = ko.observable("");
+			self.phone = ko.observable("");
+			self.address = ko.observable("");
+			
+            self.searchKey = ko.observable("");
+
+            self.getCustomerDetails = function () {              
+                $.ajax({
+                    url: 'https://286urluhjh.execute-api.us-east-2.amazonaws.com/Development/getcustdeta',
+                    cache: false,
+                    type: 'GET',                   
+                    data: { "FirstName": self.searchKey() },
+                    success: function (data) { 			
+                        self.firstName(data.FirstName)
+                        self.lastName(data.LastName),
+                        self.age(data.Age);
+						self.phone(data.PhoneNo);
+						self.address(data.Address);
+                    }
+                });
+            }
+        }
+
+            var viewModel = new customerViewModel();
+            ko.applyBindings(viewModel);
+         });
+		 
+		 function display() {
+		  var x = document.getElementById("box");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } 
+		  var y = document.getElementById("showingResults");
+		  if (y.style.display === "none") {
+			y.style.display = "block";
+		  } 
+		  var x = document.getElementById("CustomerDetails");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } 
+			document.getElementById("labelfirstName").innerHTML = document.getElementById("txtSearchKey").value;
+		  
+		}		
+       
+    </script>
+</head>
+<style>
+body{
+	background-image: url('backgroundImage.png');
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+.center{
+	text-align:center;
+	color:white;
+}
+</style>
+<body>
+	<h1 class="center">Search Customers</h1>
+	<div class="center">
+		<label>First Name/Last Name</label>
+		<input type="text" id="txtSearchKey" data-bind="value : searchKey"/>
+		<input type="button" value="Search" data-bind="click: $root.getCustomerDetails()" onclick="display()" />
+	</div>
+	<div class="center" style="margin-top:20px;display:none" id="showingResults">
+		<label>Showing results for "</label>
+		<label id="labelfirstName" value=""></label>
+		<label>"</label>
+	</div>
+	<div style="margin-left:400px; margin-right:400px; margin-top:20px; border: 1px solid white; padding: 30px; min-width:100px; color:white; display:none" id="box">
+		<table id="CustomerDetails" style="display:none">
+			<thead>
+				<tr>
+					<td>First Name:</td>
+					<td><label id="firstName" data-bind="text: firstName"/></td>
+				</tr>
+
+				<tr>
+					<td>Last Name:</td>
+					<td><label id="lastName" data-bind="text: lastName"/></td>
+				</tr>
+				<tr>
+					<td>Phone No:</td>
+					<td><label id="phone" data-bind="text: phone"/></td>
+				</tr>
+				<tr>
+					<td>Age:</td>
+					<td><label id="age" data-bind="text: age"/></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><label id="address" data-bind="text: address"/></td>
+				</tr>
+			</thead>
+		  
+		</table>
+	</div>
+  
+</body>
+</html>
